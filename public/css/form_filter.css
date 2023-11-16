@@ -1,0 +1,97 @@
+.form_filter p{
+    margin: 5px 0px 0px 0px;
+    padding: 10px 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: .9rem;
+    background-color: #0af00a;
+    color: white;
+}
+.form_filter ul  {
+   padding: 0px;
+   margin: 0px;
+ background-color: #FFF7F0 ;
+ }
+.form_filter li  {
+    border-bottom: 1px solid #0af00a;
+    padding: 5px;
+ }
+ .form_filter li:last-child{
+    border-bottom: none;
+ }
+.form_filter li a {
+   color:  #0af00a;
+   transition: color 0.5s;
+}
+.form_filter li a:hover {
+    color:  #0af00a ;
+ }
+
+
+ .form_filter .group{
+     margin: 30px auto;
+     width: 90%;
+     position: relative;
+     height: 10px;
+     background: #CBC2B9;
+     border-radius: 5px;
+     box-shadow: inset 0 1px 2px #9d968f;
+ }
+ 
+ .form_filter .progress {
+   position: absolute;
+   height: 100%;
+   left: 0%;
+   right: 0%;
+   border-radius: 5px;
+   background-image: repeating-linear-gradient(
+     -45deg, #0af00a 0, #0af00a 3px, #0af00a 3px, #0af00a 6px
+   );
+   box-shadow: inset 0 1px 2px #0af00a;
+  background-attachment: fixed; 
+ 
+ }
+ 
+ .form_filter .range-input input {
+   -webkit-appearance: none;
+   position: absolute;
+   width: 100%;
+   height: 5px;
+   margin:0;
+   background: none;
+   pointer-events: none;
+   transform: translateY(2px);
+ }
+ .form_filter input[type="range"]::-webkit-slider-thumb {
+   -webkit-appearance: none;
+   background: #0af00a;
+   border: 3px solid #0af00a;
+   height: 17px;
+   width: 17px;
+   border-radius: 50%;
+   box-shadow: inset 0 1px 2px #0af00a,
+               0 0 1px #0af00a
+   ;
+   pointer-events: auto;
+ }
+ 
+ .form_filter .text-range .text-min,
+ .form_filter .text-range .text-max{
+   position: absolute;
+   background-color: #0af00a;
+   color: #fff;
+   font-size: 10px;
+   padding: 5px;
+   left: 0;
+   width: auto;
+   text-align: center;
+   border-radius: 3px;
+   top: 15px;
+   transform: translateX(-50%);
+ }
+ .form_filter .text-range .text-max{
+   left: unset;
+   right: 0;
+   transform: translateX(50%);
+ }
+ 
